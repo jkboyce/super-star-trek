@@ -6,9 +6,8 @@ In the course of porting I discovered and fixed a few bugs in the [original code
 - line `440` : `B9` should be initialised to 0, not 2
 
 See also:
-- [Annarchive](https://annarchive.com/files/Basic_Computer_Games_Microcomputer_Edition.pdf#page=172)
-- [Atari Archives](https://www.atariarchives.org/basicgames/showpage.php?page=157)
-- [Vintage Basic](http://www.vintage-basic.net/games.html)
+- _Basic Computer Games_ pdf: [Annarchive](https://annarchive.com/files/Basic_Computer_Games_Microcomputer_Edition.pdf#page=172), [Atari Archives](https://www.atariarchives.org/basicgames/showpage.php?page=157)
+- BASIC source: [Vintage Basic](http://www.vintage-basic.net/games.html)
 
 ### Super Star Trek
 
