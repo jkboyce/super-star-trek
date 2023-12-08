@@ -6,8 +6,18 @@ In the course of porting I discovered and fixed a few bugs in the [original code
 - line `4410` : `D(7)` should be `D(6)`
 - lines `8310`,`8330`,`8430`,`8450` : Division by zero is possible
 - line `440` : `B9` should be initialised to 0, not 2
-  
-The text below is the introduction from _Basic Computer Games_, written by Dave Ahl.
+
+As published in Basic Computer Games (1978):
+- [Annarchive](https://annarchive.com/files/Basic_Computer_Games_Microcomputer_Edition.pdf#page=172)
+- [Atari Archives](https://www.atariarchives.org/basicgames/showpage.php?page=157)
+
+Downloaded from Vintage Basic at
+http://www.vintage-basic.net/games.html
+
+Instructions in this directory at
+instructions.txt
+
+The text below is the game's introduction from _Basic Computer Games_ and is written by Dave Ahl.
 
 #### Brief History
 Many versions of Star Trek have been kicking around various college campuses since the late sixties. I recall playing one at Carnegie-Mellon Univ. in 1967 or 68, and a very different one at Berkeley. However, these were a far cry from the one written by Mike Mayfield of Centerline Engineering and/or Custom Data. This was written for an HP2000C and completed in October 1972. It became the “standard” Star Trek in February 1973 when it was put in the HP contributed program library and onto a number of HP Data Center machines.
@@ -26,7 +36,7 @@ The relation between the Historical and Standard nomenclatures is shown in the s
 |   | 1            | 2  | 3   | 4  | 5          | 6  | 7   | 8  |
 |---|--------------|----|-----|----|------------|----|-----|----|
 | 1 |    ANTARES   |    |     |    |   SIRIUS   |    |     |    |
-|   | I            | II | III | IV | I          |    | III | IV |
+|   | I            | II | III | IV | I          | II | III | IV |
 | 2 |     RIGEL    |    |     |    |    DENEB   |    |     |    |
 |   | I            | II | III | IV | I          | II | III | IV |
 | 3 |    PROCYON   |    |     |    |   CAPELLA  |    |     |    |
@@ -43,6 +53,7 @@ The relation between the Historical and Standard nomenclatures is shown in the s
 |   | I            | II | III | IV | I          | II | III | IV |
 
 #### Super Star Trek† Rules and Notes
+
 1. OBJECTIVE: You are Captain of the starship “Enterprise”† with a mission to seek and destroy a fleet of Klingon† warships (usually about 17) which are menacing the United Federation of Planets.† You have a specified number of stardates in which to complete your mission. You also have two or three Federation Starbases† for resupplying your ship.
 
 2. You will be assigned a starting position somewhere in the galaxy. The galaxy is divided into an 8 x 8 quadrant grid. The astronomical name of a quadrant is called out upon entry into a new region. (See “Quadrant Nomenclature.”) Each quadrant is further divided into an 8 x 8 section grid.
@@ -97,25 +108,4 @@ The relation between the Historical and Standard nomenclatures is shown in the s
 
 15. This version of Star Trek was created for a Data General Nova 800 system with 32K or core. So that it would fit, the instructions are separated from the main program via a CHAIN. For conversion to DEC BASIC-PLUS, Statement 160 (Randomize) should be moved after the return from the chained instructions, say to Statement 245. For Altair BASIC, Randomize and the chain instructions should be eliminated.
 
----
-
-As published in Basic Computer Games (1978):
-- [Atari Archives](https://www.atariarchives.org/basicgames/showpage.php?page=157)
-- [Annarchive](https://annarchive.com/files/Basic_Computer_Games_Microcomputer_Edition.pdf#page=172)
-
-Downloaded from Vintage Basic at
-http://www.vintage-basic.net/games.html
-
-Instructions in this directory at
-instructions.txt
-
-#### Porting Notes
-
-Many of the programs in this book and this collection have bugs in the original code.
-
-@jkboyce has done a great job of discovering and fixing a number of bugs in the [original code](superstartrek.bas), as part of his [python implementation](python/superstartrek.py), which should be noted by other implementers:
-
-- line `4410` : `D(7)` should be `D(6)`
-- lines `8310`,`8330`,`8430`,`8450` : Division by zero is possible
-- line `440` : `B9` should be initialised to 0, not 2
-
+† Designates trademark of Paramount Pictures Corporation. Used by permission of Paramount Pictures Corporation.
