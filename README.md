@@ -3,7 +3,7 @@ One of my earliest memories of computer games was [Star Trek](https://en.wikiped
 This is a Python port I did of the most popular version, called Super Star Trek and published in the book _Basic Computer Games_ (1978) by Dave Ahl. This port has identical gameplay to the original, and I've been careful to exactly reproduce all output and text formatting to give the authentic retro experience. The game is simple but fun and challenging even today.
 
 For the port I chose a very direct style of translation to preserve as much of the charm of the original BASIC as I could. In the course of porting I discovered and fixed a few bugs in the [original code](orig/superstartrek.bas), as commented in the Python version. In the original they are at:
-- line `440`: `B9` should be initialised to 0, not 2
+- line `440`: `B9` should be initialized to 0, not 2
 - line `4410`: `D(7)` should be `D(6)`
 - lines `8310`,`8330`,`8430`,`8450`: Division by zero is possible
 
