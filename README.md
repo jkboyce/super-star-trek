@@ -1,5 +1,3 @@
-### Super Star Trek
-
 This is a Python port of Super Star Trek, published in Creative Computing magazine and the popular book _Basic Computer Games_ (1978) by Dave Ahl. It has identical gameplay to the original, including identical output and formatting.
 
 In the course of porting I discovered and fixed a few bugs in the [original code](superstartrek.bas), as commented in the Python version. In the original source code they are:
@@ -18,6 +16,8 @@ Instructions in this directory at
 instructions.txt
 
 The text below is the game's introduction from _Basic Computer Games_ and is written by Dave Ahl.
+
+### Super Star Trek
 
 #### Brief History
 Many versions of Star Trek have been kicking around various college campuses since the late sixties. I recall playing one at Carnegie-Mellon Univ. in 1967 or 68, and a very different one at Berkeley. However, these were a far cry from the one written by Mike Mayfield of Centerline Engineering and/or Custom Data. This was written for an HP2000C and completed in October 1972. It became the “standard” Star Trek in February 1973 when it was put in the HP contributed program library and onto a number of HP Data Center machines.
