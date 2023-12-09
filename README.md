@@ -10,6 +10,7 @@ For the port I chose a very direct style of translation to preserve as much of t
 See also:
 - _Basic Computer Games_ book: [Annarchive](https://annarchive.com/files/Basic_Computer_Games_Microcomputer_Edition.pdf#page=172), [Atari Archives](https://www.atariarchives.org/basicgames/showpage.php?page=157)
 - BASIC source: [Vintage Basic](http://www.vintage-basic.net/games.html)
+- More history: [1974: Super Star Trek](https://if50.substack.com/p/1974-super-star-trek)
 
 # Super Star Trek
 
