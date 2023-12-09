@@ -347,7 +347,10 @@ def phaser_control():
         while True:
             xs = input("NUMBER OF UNITS TO FIRE? ")
             if len(xs) > 0:
-                x = int(xs)
+                try:
+                    x = int(xs)
+                except:
+                    continue
                 break
         if x <= 0:
             return
@@ -511,7 +514,10 @@ def shield_control():
     while True:
         xs = input(f"ENERGY AVAILABLE = {e + s} NUMBER OF UNITS TO SHIELDS? ")
         if len(xs) > 0:
-            x = int(xs)
+            try:
+                x = int(xs)
+            except:
+                continue
             break
 
     if x < 0 or s == x:
@@ -578,7 +584,10 @@ def computer():
         if len(coms) == 0:
             com = 6
         else:
-            com = int(coms)
+            try:
+                com = int(coms)
+            except:
+                com = 6
         if com < 0:
             return
 
