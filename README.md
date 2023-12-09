@@ -1,30 +1,26 @@
-This is a Python port of Super Star Trek, published in Creative Computing magazine and the popular book _Basic Computer Games_ (1978) by Dave Ahl. It has identical gameplay to the original, including identical output and formatting.
+One of my earliest memories of computer games was [Star Trek](https://en.wikipedia.org/wiki/Star_Trek_(1971_video_game)). Before I ever owned a microcomputer, I played Star Trek on a [DEC PDP-11](https://en.wikipedia.org/wiki/PDP-11) timeshare system that my uncle had access to. He had a line printer terminal (basically a terminal with a printer instead of a CRT screen) with an acoustic modem coupler that fit the [AT&T phones](https://en.wikipedia.org/wiki/Princess_telephone) of the day. We would dial in to the PDP-11, listen for the grinding noise of the modem connection, shove the handset into the coupler (careful to get the right orientation), and Voila! Like magic the printer would start printing out text. The PDP-11 ran an operating system called [RSTS 7.0](https://en.wikipedia.org/wiki/RSTS/E). That's where I got my first experience with BASIC programming, in between games of Star Trek.
 
-In the course of porting I discovered and fixed a few bugs in the [original code](superstartrek.bas), as commented in the Python version. In the original source code they are:
-- line `4410` : `D(7)` should be `D(6)`
-- lines `8310`,`8330`,`8430`,`8450` : Division by zero is possible
-- line `440` : `B9` should be initialised to 0, not 2
+This is a Python port I did of the most popular version, called Super Star Trek and published in the book _Basic Computer Games_ (1978) by Dave Ahl. This port has identical gameplay to the original, and I've been careful to exactly reproduce all output and text formatting to give the authentic retro experience. The game is simple but fun and challenging even today.
 
-As published in Basic Computer Games (1978):
-- [Annarchive](https://annarchive.com/files/Basic_Computer_Games_Microcomputer_Edition.pdf#page=172)
-- [Atari Archives](https://www.atariarchives.org/basicgames/showpage.php?page=157)
+For the port I chose a very direct style of translation to preserve as much of the charm of the original BASIC as I could. In the course of porting I discovered and fixed a few bugs in the [original code](orig/superstartrek.bas), as commented in the Python version. In the original they are at:
+- line `440`: `B9` should be initialized to 0, not 2
+- line `4410`: `D(7)` should be `D(6)`
+- lines `8310`,`8330`,`8430`,`8450`: Division by zero is possible
 
-Downloaded from Vintage Basic at
-http://www.vintage-basic.net/games.html
+See also:
+- _Basic Computer Games_ book: [Annarchive](https://annarchive.com/files/Basic_Computer_Games_Microcomputer_Edition.pdf#page=172), [Atari Archives](https://www.atariarchives.org/basicgames/showpage.php?page=157)
+- BASIC source: [Vintage Basic](http://www.vintage-basic.net/games.html)
 
-Instructions in this directory at
-instructions.txt
+# Super Star Trek
 
-The text below is the game's introduction from _Basic Computer Games_ and is written by Dave Ahl.
+_Note: The text below is the game's introduction in _Basic Computer Games_, written by Dave Ahl._
 
-### Super Star Trek
-
-#### Brief History
+## Brief History
 Many versions of Star Trek have been kicking around various college campuses since the late sixties. I recall playing one at Carnegie-Mellon Univ. in 1967 or 68, and a very different one at Berkeley. However, these were a far cry from the one written by Mike Mayfield of Centerline Engineering and/or Custom Data. This was written for an HP2000C and completed in October 1972. It became the “standard” Star Trek in February 1973 when it was put in the HP contributed program library and onto a number of HP Data Center machines.
 
 In the summer of 1973, I converted the HP version to BASIC-PLUS for DEC’s RSTS-11 compiler and added a few bits and pieces while I was at it. Mary Cole at DEC contributed enormously to this task too. Later that year I published it under the name SPACWR (Space War — in retrospect, an incorrect name) in my book _101 Basic Computer Games_. It is difficult today to find an interactive computer installation that does not have one of these versions of Star Trek available.
 
-#### Quadrant Nomenclature
+## Quadrant Nomenclature
 Recently, certain critics have professed confusion as to the origin on the “quadrant” nomenclature used on all standard CG (Cartesian Galactic) maps. Naturally, for anyone with the remotest knowledge of history, no explanation is necessary; however, the following synopsis should suffice for the critics:
 
 As every schoolboy knows, most of the intelligent civilizations in the Milky Way had originated galactic designations of their own choosing well before the Third Magellanic Conference, at which the so-called “2⁶ Agreement” was reached. In that historic document, the participant cultures agreed, in all two-dimensional representations of the galaxy, to specify 64 major subdivisions, ordered as an 8 x 8 matrix. This was partially in deference to the Earth culture (which had done much in the initial organization of the Federation), whose century-old galactic maps had always shown 16 major regions named after celestial landmarks divided into four “quadrants,” designated by ancient “Roman Numerals” (the origin of which has been lost).
@@ -52,7 +48,7 @@ The relation between the Historical and Standard nomenclatures is shown in the s
 | 8 |    POLLUX    |    |     |    |    SPICA   |    |     |    |
 |   | I            | II | III | IV | I          | II | III | IV |
 
-#### Super Star Trek† Rules and Notes
+## Super Star Trek† Rules and Notes
 
 1. OBJECTIVE: You are Captain of the starship “Enterprise”† with a mission to seek and destroy a fleet of Klingon† warships (usually about 17) which are menacing the United Federation of Planets.† You have a specified number of stardates in which to complete your mission. You also have two or three Federation Starbases† for resupplying your ship.
 
